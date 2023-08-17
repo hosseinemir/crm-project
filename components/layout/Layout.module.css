@@ -1,0 +1,72 @@
+.maincontainer {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  position: relative;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 40px 10px;
+  max-width: 900px;
+}
+.header h1 {
+  font-weight: 700;
+  font-size: 18px;
+  
+}
+.header a {
+  padding: 8px 13px;
+  border: none;
+  box-shadow: 0 0 20px -15px rgb(200, 200, 200, 0.8);
+  background-color: #ababab;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  color: #000;
+  text-decoration: none;
+}
+.childDiv {
+  max-width: 900px;
+  width: 100%;
+  padding: 0 10px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  padding: 10px 10px;
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+  background-color: rgb(200, 200, 200);
+  border-radius: 5px;
+}
+@media only screen and (min-width: 768px) {
+  .childDiv,
+  .header,
+  .footer {
+    width: 80%;
+  }
+  .header a {
+    font-weight: 700;
+    font-size: 18px;
+    padding: 15px 20px;
+  }
+  .header h1 {
+    font-weight: 800;
+    font-size: 22px;
+  }
+}
+@media only screen and (min-width: 1268px) {
+  .childDiv,
+  .header,
+  .footer {
+    width: 65%;
+  }
+}
