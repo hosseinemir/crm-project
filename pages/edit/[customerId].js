@@ -17,6 +17,6 @@ export default function CustomerEdit() {
         .then((data) => setData(data.data));
 
     }
-  }, [isReady]);
+  }, [isReady , customerId]);
  if(data) return <CustomerEditPage data={data} id={customerId}/>;
 }

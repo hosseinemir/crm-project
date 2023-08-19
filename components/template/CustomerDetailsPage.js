@@ -52,7 +52,7 @@ export default function CustomerDetailsPage({ data, id }) {
       <div>
         {data.products ? (
           <div className={styles.table}>
-            <table >
+            <table>
               <thead>
                 <tr className={styles.th}>
                   <th>Name</th>
