@@ -1,5 +1,5 @@
 import Customer from "@/model/Customer";
-import connectDB from "../utils/connectDB";
+import connectDB from "@/utils/connectDB";
 import HomePage from "@/components/template/HomePage";
 
 export default function Home({ customers }) {
