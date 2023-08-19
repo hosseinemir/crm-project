@@ -1,0 +1,52 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 25px;
+    box-shadow: 0 0 10px -5px rgb(0, 0, 0,0.9);
+    border-radius: 5px;
+}
+.main p{
+    font-weight: 700;
+    font-size: 20px;
+}
+.prodiv{
+    box-shadow: 0 0 10px -5px rgb(0, 0, 0,0.9);
+padding: 20px;
+margin: 15px 0;
+border-radius: 5px;
+
+}
+.additemPrice{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.additemPrice>*{
+    width: 30%;
+}
+.removebtn{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-weight: normal;
+    font-size: 18px;
+    border: none;
+    background-color: red;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.addbtn{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-weight: normal;
+    font-size: 18px;
+    border: none;
+    background-color: rgb(26, 76, 5);
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
