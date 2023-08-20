@@ -1,5 +1,5 @@
 import Customer from "@/model/Customer";
-import connectDB from "@/utils/connectDB";
+import ConnectDB from "@/utils/ConnectDB";
 import HomePage from "@/components/template/HomePage";
 
 export default function Home({ customers }) {
@@ -12,7 +12,7 @@ export default function Home({ customers }) {
 
 export async function getServerSideProps() {
   try {
-    await connectDB();
+    await ConnectDB();
     const customer = await Customer.find();
     return {
       props: {

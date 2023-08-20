@@ -1,9 +1,9 @@
 import Customer from "@/model/Customer";
-import connectDB from "@/utils/connectDB";
+import ConnectDB from "@/utils/ConnectDB";
 
 export default async function handler(req, res) {
   try {
-    await connectDB();
+    await ConnectDB();
   } catch (err) {
     console.log(err);
     res

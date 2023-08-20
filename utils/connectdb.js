@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-export default async function connectDB(){
+export default async function ConnectDB(){
     if(mongoose.connections[0].readyState){
         return;
     }
