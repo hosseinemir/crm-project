@@ -6,7 +6,7 @@ export default function ItemList({ form, setForm }) {
   const addHandler = () => {
     setForm({
       ...form,
-      products: [...products, { name: "", price: "", qty: "" }],
+      products: [...products, { proname: "", price: "", qty: "" }],
     });
   };
   const deleteHandler = (index) => {
@@ -18,7 +18,7 @@ export default function ItemList({ form, setForm }) {
     const { name, value } = e.target;
     const newproduct = [...products];
     newproduct[index][name] = value;
-    setForm({ ...form, products: newproduct });
+    setForm({ ...form, products : newproduct });
   };
   return (
     <div className={styles.main}>
@@ -26,10 +26,10 @@ export default function ItemList({ form, setForm }) {
       {products.map((item, index) => (
         <div key={index} className={styles.prodiv}>
           <FormInput
-            name="name"
+            name="proname"
             lable="Product Name"
             type="text"
-            value={item.name}
+            value={item.proname}
             onChange={(e) => onChangeHandler(e, index)}
           />
           <div className={styles.additemPrice}>

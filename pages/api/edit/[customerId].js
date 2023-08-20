@@ -22,7 +22,7 @@ export default async function handler(req, res) {
       customer.address = data.address;
       customer.postalCode = data.postalCode;
       customer.date = data.date;
-      customer.products = data.name;
+      customer.products = data.products;
       customer.updatedAt = Date.now();
       customer.save();
       res.status(200).json({ status: "success", message: "user updated" , data:customer });

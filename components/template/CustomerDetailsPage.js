@@ -63,7 +63,7 @@ export default function CustomerDetailsPage({ data, id }) {
               <tbody>
                 {data.products.map((item, index) => (
                   <tr className={styles.td} key={index}>
-                    <td>{item.name}</td>
+                    <td>{item.proname}</td>
                     <td>{item.price}</td>
                     <td>{item.qty}</td>
                   </tr>

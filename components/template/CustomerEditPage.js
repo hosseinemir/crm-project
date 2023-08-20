@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import moment from "moment/moment";
 export default function CustomerEditPage({ data, id }) {
   const date = data.date ? moment(data.date).utc().format("YYYY-MM-DD") : "";
+  
   const [form, setForm] = useState({
     name: data.name,
     lastname: data.lastname,
@@ -15,6 +16,7 @@ export default function CustomerEditPage({ data, id }) {
     date: date || "",
     products: data.products || [],
   });
+  
   const router = useRouter();
   const cancelhandler = () => {
     router.push("/");
